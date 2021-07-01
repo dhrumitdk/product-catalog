@@ -17,10 +17,6 @@ const validate = (values) => {
     errors.productName = "This field cannot be empty";
   }
 
-  if (!values.productImageUrl) {
-    errors.productImageUrl = "Please select an image";
-  }
-
   if (!values.productQuantity) {
     errors.productQuantity = "This field cannot be empty";
   }
@@ -101,20 +97,12 @@ function AddProducts() {
             </Form.Group>
 
             <Form.Group controlId="productImageUrl">
-              <Form.Label>Product Image*</Form.Label>
+              <Form.Label>Product Image</Form.Label>
               <Form.Control
                 type="file"
                 name="productImageUrl"
                 onChange={uploadImage}
               />
-              {/* displays validations */}
-              {formik.touched.productImageUrl &&
-              formik.errors.productImageUrl ? (
-                <div className="Error-div">
-                  {" "}
-                  {formik.errors.productImageUrl}{" "}
-                </div>
-              ) : null}
             </Form.Group>
 
             <Form.Group controlId="productDescription">
