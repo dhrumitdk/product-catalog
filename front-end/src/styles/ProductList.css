@@ -1,0 +1,13 @@
+.Products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Product-list-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 12px 0 20px;
+}

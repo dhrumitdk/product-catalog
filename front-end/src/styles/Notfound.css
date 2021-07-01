@@ -1,0 +1,5 @@
+.Not-found {
+  display: grid;
+  height: 80vh;
+  place-items: center;
+}
